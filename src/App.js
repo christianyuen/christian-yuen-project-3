@@ -43,7 +43,7 @@ function App() {
 
     const handleRemoveFromCart = () => {
       // some event handler code we would like to run when the button is clicked.
-      setCart( cart = cart - 1 );
+      setCart( cart = 0 );
       console.log(cart);
     }
 
@@ -53,14 +53,23 @@ function App() {
       <ul>
         {items.map((item) => {
           return (
-            <li key={item.tops.tees.product_id}>
-              <h2>{item.tops.tees.name}</h2>
-              <img src={item.tops.tees.url} alt={item.tops.type} />
-              <p>{item.tops.tees.price}</p>
-              <button onClick={handleAddToCart}>Add To Cart</button>
-              <button onClick={handleRemoveFromCart}>Remove From Cart</button>
-              <p>{cart}</p>
-            </li>
+            <>
+              <header>
+                <h1>By Satory</h1>
+              </header>
+              <main>
+                <div className="wrapper">
+                  <li key={item.tops.tees.product_id}>
+                    <img src={item.tops.tees.url} alt={item.tops.type} />
+                    <h2>{item.tops.tees.name}</h2>
+                    <p>{item.tops.tees.price}</p>
+                    <button className="add" onClick={handleAddToCart}>Add To Cart</button>
+                    <button className="remove" onClick={handleRemoveFromCart}>Remove From Cart</button>
+                    <p>{cart}</p>
+                  </li>
+                </div>
+              </main>
+            </>
           )
         })}
       </ul>
