@@ -1,0 +1,14 @@
+{
+    "items": {
+        "tops": {
+            "tees": {
+                "name": "Blank Tee",
+                "size": "s, m, l, xl",
+                "price": "$30.00",
+                "quantity": "30",
+                "url": "http://picture-cdn.wheretoget.it/txsdqn-i.jpg",
+                "product_id": "1"
+            }
+        }
+    }
+}
