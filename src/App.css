@@ -54,8 +54,8 @@
   width: 45px;
   padding: 10px 0px;
   border-radius: 100%;
-  left: 30px;
-  bottom: 75px;
+  left: 25px;
+  bottom: 115px;
 }
 
 .bucketAdd {
@@ -66,7 +66,7 @@
   width: 45px;
   padding: 10px 0px;
   border-radius: 100%;
-  bottom: 95px;
+  bottom: 135px;
   right: 35px;
   border: none;
   cursor: pointer;
@@ -89,7 +89,7 @@
   width: 24px;
   padding: 0px 0px;
   border-radius: 100%;
-  bottom: 95px;
+  bottom: 135px;
   right: 85px;
   border: none;
   cursor: pointer;
@@ -130,8 +130,8 @@
   width: 45px;
   padding: 10px 0px;
   border-radius: 100%;
-  bottom: 95px;
-  right: 160px;
+  bottom: 69px;
+  right: 37px;
   border: none;
   cursor: pointer;
   transition: all ease-in-out 0.3s;
@@ -153,8 +153,8 @@
   width: 24px;
   padding: 0px 0px;
   border-radius: 100%;
-  bottom: 95px;
-  right: 130px;
+  bottom: 91px;
+  right: 82px;
   border: none;
   cursor: pointer;
   transition: all ease-in-out 0.3s;
@@ -193,8 +193,8 @@
   width: 45px;
   padding: 10px 0px;
   border-radius: 100%;
-  bottom: 225px;
-  right: 25px;
+  bottom: 233px;
+  right: -1px;
   border: none;
   cursor: pointer;
   transition: all ease-in-out 0.3s;
@@ -216,8 +216,8 @@
   width: 24px;
   padding: 0px 0px;
   border-radius: 100%;
-  bottom: 195px;
-  right: 20px;
+  bottom: 204px;
+  right: -3px;
   border: none;
   cursor: pointer;
   transition: all ease-in-out 0.3s;
@@ -244,7 +244,7 @@
   width: 45px;
   padding: 10px 0px;
   border-radius: 100%;
-  bottom: -10px;
+  bottom: 0px;
   right: 0px;
 }
 
@@ -256,8 +256,8 @@
   width: 45px;
   padding: 10px 0px;
   border-radius: 100%;
-  bottom: 0px;
-  right: 155px;
+  bottom: 20px;
+  right: 140px;
   border: none;
   cursor: pointer;
   transition: all ease-in-out 0.3s;
@@ -279,8 +279,8 @@
   width: 24px;
   padding: 0px 0px;
   border-radius: 100%;
-  bottom: 0px;
-  right: 125px;
+  bottom: -5px;
+  right: 130px;
   border: none;
   cursor: pointer;
   transition: all ease-in-out 0.3s;
@@ -358,4 +358,65 @@ p {
   font-size: 0.8rem;
 }
 
+/* MEDIA QUERIES */
 
+@media (max-width: 1020px) {
+  .itemContainer {
+    margin:  10px 50px;
+  }
+  .bucketPrice {
+    bottom: 43px;
+  }
+
+  .bucketAdd {
+    bottom: 65px;
+  }
+
+  .bucketRemove {
+    bottom: 65px;
+    right: 84px;
+  }
+
+  .beanieAdd {
+    bottom: -14px;
+  }
+
+  .beanieRemove {
+    bottom: 10px;
+  }
+  
+}
+
+@media (max-width: 790px) {
+  .itemContainer {
+    margin:  10px 80px;
+  }
+  .bucketPrice {
+    bottom: -20px;
+  }
+
+  .bucketAdd {
+    bottom: 0px;
+  }
+
+  .bucketRemove {
+    bottom: -5px;
+    right: 84px;
+  }
+
+
+  .bonnetAdd {
+    bottom: 169px;
+  }
+
+  .bonnetRemove {
+    bottom: 140px;
+  }
+  
+}
+
+@media (max-width: 440px) {
+  .satory {
+    width: 200px;
+  }
+}
