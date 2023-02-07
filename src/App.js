@@ -50,29 +50,63 @@ function App() {
 
   return (
     <div className="App">
-      <ul>
-        {items.map((item) => {
-          return (
-            <>
-              <header>
-                <h1>By Satory</h1>
-              </header>
-              <main>
-                <div className="wrapper">
-                  <li key={item.tops.tees.product_id}>
-                    <img src={item.tops.tees.url} alt={item.tops.type} />
-                    <h2>{item.tops.tees.name}</h2>
-                    <p>{item.tops.tees.price}</p>
-                    <button className="add" onClick={handleAddToCart}>Add To Cart</button>
-                    <button className="remove" onClick={handleRemoveFromCart}>Remove From Cart</button>
-                    <p>{cart}</p>
-                  </li>
-                </div>
-              </main>
-            </>
-          )
-        })}
-      </ul>
+      <div className="wrapper">
+        <header>
+          <div className="cart">
+            <img src={require('./assets/shopping-cart copy.png')}></img>
+            <p>{`${cart}`}</p>
+          </div>
+          <div className="titleContainer">
+            <img className="satory" src={require('./assets/satory.png')}></img>
+          </div>
+        </header>
+        <main>
+          <ul>
+            {items.map((item) => {
+              return (
+                <li key={item.bonnet.product_id}>
+                  <div className="itemContainer">
+                    <img className="bucket" src={item.bucket.url} alt={item.bucket.name} />
+                    <div className="itemHover">
+                      <p className="bucketPrice">{item.bucket.price}</p>
+                          <button className="bucketAdd" onClick={handleAddToCart}>+</button>
+                          <button className="bucketRemove" onClick={handleRemoveFromCart}>-</button>
+                    </div>
+                  </div>
+
+                  <div className="itemContainer">
+                    <img className="beanie" src={item.beanie.url} alt={item.beanie.name} />
+                    <div className="itemHover">
+                      <p className="beaniePrice">{item.beanie.price}</p>
+                          <button className="beanieAdd" onClick={handleAddToCart}>+</button>
+                          <button className="beanieRemove" onClick={handleRemoveFromCart}>-</button>
+                    </div>
+                  </div>
+
+                  <div className="itemContainer">
+                    <img className="bonnet" src={item.bonnet.url} alt={item.bonnet.name} />
+                    <div className="itemHover">
+                      <p className="bonnetPrice">{item.bonnet.price}</p>
+                          <button className="bonnetAdd" onClick={handleAddToCart}>+</button>
+                          <button className="bonnetRemove" onClick={handleRemoveFromCart}>-</button>
+                    </div>
+                  </div>
+
+                  <div className="itemContainer">
+                    <img className="bag" src={item.bag.url} alt={item.bag.name} />
+                    <div className="itemHover">
+                      <p className="bagPrice">{item.bag.price}</p>
+                          <button className="bagAdd" onClick={handleAddToCart}>+</button>
+                          <button className="bagRemove" onClick={handleRemoveFromCart}>-</button>
+                    </div>
+                  </div>  
+                </li>
+              )
+            })}
+          </ul>
+        </main>
+        
+      </div>
     </div>
   )
 }

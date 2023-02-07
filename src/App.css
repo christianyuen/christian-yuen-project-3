@@ -8,24 +8,324 @@
   padding: 0 50px;
   max-width: 1100px;
 }
+
 /* HEADER STYLES */
-.header {
+
+.title {
+  padding: 0;
+  margin-top: 20px;
+  width: 150px;
+}
+
+.cart {
   display: flex;
+  justify-content: right;
+  position: relative;
+}
+
+.cart img {
+  margin-top: 15px;
+  width: 50px;
+  height: 45px;
+}
+
+.cart p {
+  position: absolute;
+  color: white;
+  right: 15px;
+  top: 8px;
 }
 
 /* MAIN STYLES */
-.main {
-  display: flex;
-}
 
-img {
-  width: 300px;
+
+.bucket {
+  width: 250px;
   height: auto;
 }
 
+.bucketPrice {
+  position: absolute;
+  font-size: 20px;
+  color: white;
+  background-color: black;
+  width: 45px;
+  padding: 10px 0px;
+  border-radius: 100%;
+  left: 30px;
+  bottom: 75px;
+}
+
+.bucketAdd {
+  position: absolute;
+  font-size: 20px;
+  color: white;
+  background-color: black;
+  width: 45px;
+  padding: 10px 0px;
+  border-radius: 100%;
+  bottom: 95px;
+  right: 40px;
+  border: none;
+  cursor: pointer;
+  transition: all ease-in-out 0.3s;
+}
+
+.bucketAdd:hover {
+  transform: scale(1.1);
+}
+
+.bucketAdd:focus {
+  transform: scale(1.1);
+}
+
+.bucketRemove {
+  position: absolute;
+  font-size: 20px;
+  color: white;
+  background-color: black;
+  width: 24px;
+  padding: 0px 0px;
+  border-radius: 100%;
+  bottom: 95px;
+  right: 85px;
+  border: none;
+  cursor: pointer;
+  transition: all ease-in-out 0.3s;
+}
+
+.bucketRemove:hover {
+  transform: scale(1.1);
+}
+
+.bucketRemove:focus {
+  transform: scale(1.1);
+}
+
+
+.beanie {
+  width: 200px;
+  height: auto;
+}
+
+.beaniePrice {
+  position: absolute;
+  font-size: 20px;
+  color: white;
+  background-color: black;
+  width: 45px;
+  padding: 10px 0px;
+  border-radius: 100%;
+  top: 17px;
+  right: 50px;
+}
+
+.beanieAdd {
+  position: absolute;
+  font-size: 20px;
+  color: white;
+  background-color: black;
+  width: 45px;
+  padding: 10px 0px;
+  border-radius: 100%;
+  bottom: 95px;
+  right: 160px;
+  border: none;
+  cursor: pointer;
+  transition: all ease-in-out 0.3s;
+}
+
+.beanieAdd:hover {
+  transform: scale(1.1);
+}
+
+.beanieAdd:focus {
+  transform: scale(1.1);
+}
+
+.beanieRemove {
+  position: absolute;
+  font-size: 20px;
+  color: white;
+  background-color: black;
+  width: 24px;
+  padding: 0px 0px;
+  border-radius: 100%;
+  bottom: 95px;
+  right: 130px;
+  border: none;
+  cursor: pointer;
+  transition: all ease-in-out 0.3s;
+}
+
+.beanieRemove:hover {
+  transform: scale(1.1);
+}
+
+.beanieRemove:focus {
+  transform: scale(1.1);
+}
+
+.bonnet {
+  width: 150px;
+  height: auto;
+}
+
+.bonnetPrice {
+  position: absolute;
+  font-size: 20px;
+  color: white;
+  background-color: black;
+  width: 45px;
+  padding: 10px 0px;
+  border-radius: 100%;
+  top: 135px;
+  right: 65px;
+}
+
+.bonnetAdd {
+  position: absolute;
+  font-size: 20px;
+  color: white;
+  background-color: black;
+  width: 45px;
+  padding: 10px 0px;
+  border-radius: 100%;
+  bottom: 220px;
+  right: 25px;
+  border: none;
+  cursor: pointer;
+  transition: all ease-in-out 0.3s;
+}
+
+.bonnetAdd:hover {
+  transform: scale(1.1);
+}
+
+.bonnetAdd:focus {
+  transform: scale(1.1);
+}
+
+.bonnetRemove {
+  position: absolute;
+  font-size: 20px;
+  color: white;
+  background-color: black;
+  width: 24px;
+  padding: 0px 0px;
+  border-radius: 100%;
+  bottom: 195px;
+  right: 20px;
+  border: none;
+  cursor: pointer;
+  transition: all ease-in-out 0.3s;
+}
+
+.bonnetRemove:hover {
+  transform: scale(1.1);
+}
+
+.bonnetRemove:focus {
+  transform: scale(1.1);
+}
+
+.bag {
+  width: 200px;
+  height: auto;
+}
+
+.bagPrice {
+  position: absolute;
+  font-size: 20px;
+  color: white;
+  background-color: black;
+  width: 45px;
+  padding: 10px 0px;
+  border-radius: 100%;
+  bottom: -10px;
+  right: 0px;
+}
+
+.bagAdd {
+  position: absolute;
+  font-size: 20px;
+  color: white;
+  background-color: black;
+  width: 45px;
+  padding: 10px 0px;
+  border-radius: 100%;
+  bottom: 0px;
+  right: 150px;
+  border: none;
+  cursor: pointer;
+  transition: all ease-in-out 0.3s;
+}
+
+.bagAdd:hover {
+  transform: scale(1.1);
+}
+
+.bonnetRemove:focus {
+  transform: scale(1.1);
+}
+
+.bagRemove {
+  position: absolute;
+  font-size: 20px;
+  color: white;
+  background-color: black;
+  width: 24px;
+  padding: 0px 0px;
+  border-radius: 100%;
+  bottom: 0px;
+  right: 125px;
+  border: none;
+  cursor: pointer;
+  transition: all ease-in-out 0.3s;
+}
+
+.bagRemove:hover {
+  transform: scale(1.1);
+}
+
+.bagRemove:focus {
+  transform: scale(1.1);
+}
+
 li {
-  margin-top: 30px;
   list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.buttonContainer {
+  display: flex;
+}
+
+button {
+  width: 80px;
+}
+
+.itemContainer {
+  position: relative;
+}
+
+.itemHover {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  opacity: 0;
+  transition: all ease-in-out 0.8s;
+}
+.itemHover:hover {
+  opacity: 100%;
+}
+
+.itemHover:focus {
+  opacity: 100%;
 }
 
 /* FOOTER STYLES */

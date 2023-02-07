@@ -1,14 +1,28 @@
 {
     "items": {
-        "tops": {
-            "tees": {
-                "name": "Blank Tee",
-                "size": "s, m, l, xl",
-                "price": "$30.00",
-                "quantity": "30",
-                "url": "http://picture-cdn.wheretoget.it/txsdqn-i.jpg",
-                "product_id": "1"
-            }
+        "bonnet": {
+            "name": "bonnet",
+            "price": "$90",
+            "url": "https://i.ibb.co/72rskDv/bonnets.jpg",
+            "product_id": "1"     
+        },
+        "bucket": {
+            "name": "bucket",
+            "price": "$90",
+            "url": "https://i.ibb.co/m8tHxp8/buckets.jpg",
+            "product_id": "2"     
+        },
+        "bag": {
+            "name": "bag",
+            "price": "$150",
+            "url": "https://i.ibb.co/wzMfCTr/bags.jpg",
+            "product_id": "3"     
+        },
+        "beanie": {
+            "name": "beanie",
+            "price": "$90",
+            "url": "https://i.ibb.co/hgj4b4S/beanies.jpg",
+            "product_id": "4"     
         }
     }
 }
