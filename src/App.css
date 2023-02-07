@@ -1,6 +1,9 @@
 /* BASE STYLES */
 .App {
   text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .wrapper {
@@ -65,18 +68,18 @@
   padding: 10px 0px;
   border-radius: 100%;
   bottom: 95px;
-  right: 40px;
+  right: 35px;
   border: none;
   cursor: pointer;
   transition: all ease-in-out 0.3s;
 }
 
 .bucketAdd:hover {
-  transform: scale(1.1);
+  transform: scale(1.2);
 }
 
 .bucketAdd:focus {
-  transform: scale(1.1);
+  transform: scale(1.2);
 }
 
 .bucketRemove {
@@ -95,11 +98,11 @@
 }
 
 .bucketRemove:hover {
-  transform: scale(1.1);
+  transform: scale(1.2);
 }
 
 .bucketRemove:focus {
-  transform: scale(1.1);
+  transform: scale(1.2);
 }
 
 
@@ -136,11 +139,11 @@
 }
 
 .beanieAdd:hover {
-  transform: scale(1.1);
+  transform: scale(1.2);
 }
 
 .beanieAdd:focus {
-  transform: scale(1.1);
+  transform: scale(1.2);
 }
 
 .beanieRemove {
@@ -159,11 +162,11 @@
 }
 
 .beanieRemove:hover {
-  transform: scale(1.1);
+  transform: scale(1.2);
 }
 
 .beanieRemove:focus {
-  transform: scale(1.1);
+  transform: scale(1.2);
 }
 
 .bonnet {
@@ -191,7 +194,7 @@
   width: 45px;
   padding: 10px 0px;
   border-radius: 100%;
-  bottom: 220px;
+  bottom: 225px;
   right: 25px;
   border: none;
   cursor: pointer;
@@ -199,11 +202,11 @@
 }
 
 .bonnetAdd:hover {
-  transform: scale(1.1);
+  transform: scale(1.2);
 }
 
 .bonnetAdd:focus {
-  transform: scale(1.1);
+  transform: scale(1.2);
 }
 
 .bonnetRemove {
@@ -222,11 +225,11 @@
 }
 
 .bonnetRemove:hover {
-  transform: scale(1.1);
+  transform: scale(1.2);
 }
 
 .bonnetRemove:focus {
-  transform: scale(1.1);
+  transform: scale(1.2);
 }
 
 .bag {
@@ -255,18 +258,18 @@
   padding: 10px 0px;
   border-radius: 100%;
   bottom: 0px;
-  right: 150px;
+  right: 155px;
   border: none;
   cursor: pointer;
   transition: all ease-in-out 0.3s;
 }
 
 .bagAdd:hover {
-  transform: scale(1.1);
+  transform: scale(1.2);
 }
 
 .bonnetRemove:focus {
-  transform: scale(1.1);
+  transform: scale(1.2);
 }
 
 .bagRemove {
@@ -285,11 +288,11 @@
 }
 
 .bagRemove:hover {
-  transform: scale(1.1);
+  transform: scale(1.2);
 }
 
 .bagRemove:focus {
-  transform: scale(1.1);
+  transform: scale(1.2);
 }
 
 li {
@@ -309,6 +312,7 @@ button {
 
 .itemContainer {
   position: relative;
+  margin: 10px;
 }
 
 .itemHover {
@@ -329,4 +333,14 @@ button {
 }
 
 /* FOOTER STYLES */
+.footer {
+  display: flex;
+  position: sticky;
+  background-color: black;
+}
 
+p a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}

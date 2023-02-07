@@ -105,8 +105,11 @@ function App() {
             })}
           </ul>
         </main>
-        
       </div>
+      {/* END WRAPPER */}
+      <footer>
+        <p>Created at <a href="www.junocollege.com">Juno College of Technology</a></p>
+      </footer>
     </div>
   )
 }
