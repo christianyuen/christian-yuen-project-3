@@ -1,10 +1,9 @@
 /* BASE STYLES */
 .App {
   text-align: center;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+  font-size: 125%;
 }
+
 
 .wrapper {
   margin: 0 auto;
@@ -35,8 +34,8 @@
 .cart p {
   position: absolute;
   color: white;
-  right: 15px;
-  top: 8px;
+  right: 16px;
+  top: 12px;
 }
 
 /* MAIN STYLES */
@@ -332,15 +331,31 @@ button {
   opacity: 100%;
 }
 
+#bagContainer {
+  margin-bottom: 50px;
+}
+
 /* FOOTER STYLES */
-.footer {
-  display: flex;
-  position: sticky;
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
   background-color: black;
+  color: white;
+  text-align: center;
 }
 
 p a {
   text-decoration: none;
   color: black;
   font-weight: bold;
+  color: white;
 }
+
+p {
+  color: white;
+  font-size: 0.8rem;
+}
+
+

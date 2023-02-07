@@ -92,7 +92,7 @@ function App() {
                     </div>
                   </div>
 
-                  <div className="itemContainer">
+                  <div id="bagContainer" className="itemContainer">
                     <img className="bag" src={item.bag.url} alt={item.bag.name} />
                     <div className="itemHover">
                       <p className="bagPrice">{item.bag.price}</p>

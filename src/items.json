@@ -8,19 +8,19 @@
         },
         "bucket": {
             "name": "bucket",
-            "price": "$90",
+            "price": "$65",
             "url": "https://i.ibb.co/m8tHxp8/buckets.jpg",
             "product_id": "2"     
         },
         "bag": {
             "name": "bag",
-            "price": "$150",
+            "price": "$95",
             "url": "https://i.ibb.co/wzMfCTr/bags.jpg",
             "product_id": "3"     
         },
         "beanie": {
             "name": "beanie",
-            "price": "$90",
+            "price": "$75",
             "url": "https://i.ibb.co/hgj4b4S/beanies.jpg",
             "product_id": "4"     
         }
