@@ -1,9 +1,10 @@
+
+
 /* BASE STYLES */
 .App {
   text-align: center;
   font-size: 125%;
 }
-
 
 .wrapper {
   margin: 0 auto;
@@ -11,18 +12,44 @@
   max-width: 1100px;
 }
 
-/* HEADER STYLES */
-
-.title {
-  padding: 0;
-  margin-top: 20px;
-  width: 150px;
+.dark {
+  background-color: #492a88;
 }
+
+.light {
+  background-color: #fff;
+  }
+
+/* TOP PAGE STYLES */
+.topPage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color: white;
+  height: 20px;
+}
+
+.topPage p span {
+  font-weight: bold;
+}
+/* HEADER STYLES */
 
 .cart {
   display: flex;
   justify-content: right;
   position: relative;
+}
+
+.cart a {
+  cursor: pointer;
+  height: auto;
+  transition: all ease-in-out 0.3s;
+  text-shadow: 2px 2px 5px red;
+}
+
+.cart a:hover {
+  transform: scale(1.15);
 }
 
 .cart img {
@@ -71,14 +98,17 @@
   border: none;
   cursor: pointer;
   transition: all ease-in-out 0.3s;
+  opacity: 50%;
 }
 
 .bucketAdd:hover {
   transform: scale(1.2);
+  opacity: 100%;
 }
 
 .bucketAdd:focus {
   transform: scale(1.2);
+  opacity: 100%;
 }
 
 .bucketRemove {
@@ -94,14 +124,17 @@
   border: none;
   cursor: pointer;
   transition: all ease-in-out 0.3s;
+  opacity: 50%;
 }
 
 .bucketRemove:hover {
   transform: scale(1.2);
+  opacity: 100%;
 }
 
 .bucketRemove:focus {
   transform: scale(1.2);
+  opacity: 100%;
 }
 
 
@@ -131,18 +164,21 @@
   padding: 10px 0px;
   border-radius: 100%;
   bottom: 69px;
-  right: 37px;
+  right: 33px;
   border: none;
   cursor: pointer;
   transition: all ease-in-out 0.3s;
+  opacity: 50%;
 }
 
 .beanieAdd:hover {
   transform: scale(1.2);
+  opacity: 100%;
 }
 
 .beanieAdd:focus {
   transform: scale(1.2);
+  opacity: 100%;
 }
 
 .beanieRemove {
@@ -158,14 +194,17 @@
   border: none;
   cursor: pointer;
   transition: all ease-in-out 0.3s;
+  opacity: 50%;
 }
 
 .beanieRemove:hover {
   transform: scale(1.2);
+  opacity: 100%;
 }
 
 .beanieRemove:focus {
   transform: scale(1.2);
+  opacity: 100%;
 }
 
 .bonnet {
@@ -198,14 +237,17 @@
   border: none;
   cursor: pointer;
   transition: all ease-in-out 0.3s;
+  opacity: 50%;
 }
 
 .bonnetAdd:hover {
   transform: scale(1.2);
+  opacity: 100%;
 }
 
 .bonnetAdd:focus {
   transform: scale(1.2);
+  opacity: 100%;
 }
 
 .bonnetRemove {
@@ -221,14 +263,17 @@
   border: none;
   cursor: pointer;
   transition: all ease-in-out 0.3s;
+  opacity: 50%;
 }
 
 .bonnetRemove:hover {
   transform: scale(1.2);
+  opacity: 100%;
 }
 
 .bonnetRemove:focus {
   transform: scale(1.2);
+  opacity: 100%;
 }
 
 .bag {
@@ -261,14 +306,17 @@
   border: none;
   cursor: pointer;
   transition: all ease-in-out 0.3s;
+  opacity: 50%;
 }
 
 .bagAdd:hover {
   transform: scale(1.2);
+  opacity: 100%;
 }
 
 .bonnetRemove:focus {
   transform: scale(1.2);
+  opacity: 100%;
 }
 
 .bagRemove {
@@ -284,14 +332,17 @@
   border: none;
   cursor: pointer;
   transition: all ease-in-out 0.3s;
+  opacity: 50%;
 }
 
 .bagRemove:hover {
   transform: scale(1.2);
+  opacity: 100%;
 }
 
 .bagRemove:focus {
   transform: scale(1.2);
+  opacity: 100%;
 }
 
 li {
@@ -348,7 +399,6 @@ footer {
 
 p a {
   text-decoration: none;
-  color: black;
   font-weight: bold;
   color: white;
 }
