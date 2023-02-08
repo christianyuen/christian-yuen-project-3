@@ -1,7 +1,8 @@
+import './App.css';
 import { useState, useEffect } from 'react';
 import { getDatabase, ref, onValue } from 'firebase/database';
 import firebase from './Components/firebase'
-import './App.css';
+import TopBanner from './Components/TopBanner';
 
 function App() {
   const [items, setItems] = useState([]);
@@ -13,8 +14,7 @@ function App() {
     const dbRef = ref(database)
     
     onValue(dbRef, (response) => {
-       // here we use Firebase's .val() method to parse our database info the way we want it
-      console.log(response.val());
+      // here we use Firebase's .val() method to parse our database info the way we want it
       // here we're creating a variable to store the new state we want to introduce to our app
       const newState = [];
 
@@ -31,22 +31,20 @@ function App() {
       // then, we call setItems in order to update our component's state using the local array newState
       setItems(newState);  
     });
-  }, [setItems])
+  }, [])
     
     const handleAddToCart = () => {
       setCart( cart = cart + 1 );
-      console.log(cart);
     }
 
     let [cart, setCart] = useState(0);
 
     const handleRemoveFromCart = () => {
       setCart( cart = 0 );
-      console.log(cart);
     }
 
     // LIGHT/DARK FUNCTION
-    const [theme, setTheme] = useState('light' , '');
+    const [theme, setTheme] = useState('light');
 
     const toggleTheme = () => {
       if (theme === 'light') {
@@ -62,20 +60,18 @@ function App() {
 
   return (
     <div className={`App ${theme}`}>
-      <section className="topPage">
-        <p>"<span>handmade</span> in <span>nyc</span>"</p>
-      </section>
+      <TopBanner />
       <div className="wrapper">
         <header>
           <div className="cart">
           <button className="removeButton" onClick={handleRemoveFromCart}>-</button>
-            <a onClick={toggleTheme}><img src={require('./assets/butterfly-top-view.png')} /> </a>
+            <img onClick={toggleTheme} src={require('./assets/butterfly-top-view.png')} alt=""/> 
             <div>
-              <img src={require('./assets/shopping-cart copy.png')}></img>
+              <img src={require('./assets/shopping-cart copy.png')}alt="" /> 
               <p>{`${cart}`}</p>
             </div>
           </div>
-            <img className="satory" src={require('./assets/satory.png')}></img>
+            <img className="satory" src={require('./assets/satory.png')} alt="" />
         </header>
         <main>
           <ul>
