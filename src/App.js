@@ -67,10 +67,8 @@ function App() {
       </section>
       <div className="wrapper">
         <header>
-          <div className="lightDark">
-            
-          </div>
           <div className="cart">
+          <button className="removeButton" onClick={handleRemoveFromCart}>-</button>
             <a onClick={toggleTheme}><img src={require('./assets/butterfly-top-view.png')} /> </a>
             <div>
               <img src={require('./assets/shopping-cart copy.png')}></img>
@@ -89,7 +87,6 @@ function App() {
                     <div className="itemHover">
                       <p className="bucketPrice">{item.bucket.price}</p>
                           <button className="bucketAdd" onClick={handleAddToCart}>+</button>
-                          <button className="bucketRemove" onClick={handleRemoveFromCart}>-</button>
                     </div>
                   </div>
 
@@ -98,7 +95,7 @@ function App() {
                     <div className="itemHover">
                       <p className="beaniePrice">{item.beanie.price}</p>
                           <button className="beanieAdd" onClick={handleAddToCart}>+</button>
-                          <button className="beanieRemove" onClick={handleRemoveFromCart}>-</button>
+                          
                     </div>
                   </div>
 
@@ -107,7 +104,7 @@ function App() {
                     <div className="itemHover">
                       <p className="bonnetPrice">{item.bonnet.price}</p>
                           <button className="bonnetAdd" onClick={handleAddToCart}>+</button>
-                          <button className="bonnetRemove" onClick={handleRemoveFromCart}>-</button>
+                          
                     </div>
                   </div>
 
@@ -116,7 +113,7 @@ function App() {
                     <div className="itemHover">
                       <p className="bagPrice">{item.bag.price}</p>
                           <button className="bagAdd" onClick={handleAddToCart}>+</button>
-                          <button className="bagRemove" onClick={handleRemoveFromCart}>-</button>
+                          
                     </div>
                   </div>  
                 </li>
@@ -127,7 +124,7 @@ function App() {
       </div>
       {/* END WRAPPER */}
       <footer>
-        <p>Created at <a href="www.junocollege.com">Juno College of Technology</a></p>
+        <p>Created at <a href="https://www.junocollege.com">Juno College of Technology</a></p>
       </footer>
     </div>
   )

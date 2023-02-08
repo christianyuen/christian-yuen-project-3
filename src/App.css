@@ -41,6 +41,32 @@
   position: relative;
 }
 
+.removeButton {
+  position: absolute;
+  font-size: 20px;
+  color: white;
+  background-color: black;
+  width: 28px;
+  padding: 0px 0px;
+  border-radius: 100%;
+  bottom: 3px;
+  right: -18px;
+  border: none;
+  cursor: pointer;
+  transition: all ease-in-out 0.3s;
+  /* opacity: 50%; */
+  border: 2px white solid;
+}
+
+.removeButton:hover {
+  transform: scale(1.15);
+  opacity: 100%;
+}
+
+.removeButton:focus {
+  transform: scale(1.15);
+  opacity: 100%;
+}
 .cart a {
   cursor: pointer;
   height: auto;
@@ -111,33 +137,6 @@
   opacity: 100%;
 }
 
-.bucketRemove {
-  position: absolute;
-  font-size: 20px;
-  color: white;
-  background-color: black;
-  width: 24px;
-  padding: 0px 0px;
-  border-radius: 100%;
-  bottom: 135px;
-  right: 85px;
-  border: none;
-  cursor: pointer;
-  transition: all ease-in-out 0.3s;
-  opacity: 50%;
-}
-
-.bucketRemove:hover {
-  transform: scale(1.2);
-  opacity: 100%;
-}
-
-.bucketRemove:focus {
-  transform: scale(1.2);
-  opacity: 100%;
-}
-
-
 .beanie {
   width: 200px;
   height: auto;
@@ -181,32 +180,6 @@
   opacity: 100%;
 }
 
-.beanieRemove {
-  position: absolute;
-  font-size: 20px;
-  color: white;
-  background-color: black;
-  width: 24px;
-  padding: 0px 0px;
-  border-radius: 100%;
-  bottom: 91px;
-  right: 82px;
-  border: none;
-  cursor: pointer;
-  transition: all ease-in-out 0.3s;
-  opacity: 50%;
-}
-
-.beanieRemove:hover {
-  transform: scale(1.2);
-  opacity: 100%;
-}
-
-.beanieRemove:focus {
-  transform: scale(1.2);
-  opacity: 100%;
-}
-
 .bonnet {
   width: 150px;
   height: auto;
@@ -220,8 +193,8 @@
   width: 45px;
   padding: 10px 0px;
   border-radius: 100%;
-  top: 135px;
-  right: 65px;
+  top: 0px;
+  right: 120px;
 }
 
 .bonnetAdd {
@@ -232,8 +205,8 @@
   width: 45px;
   padding: 10px 0px;
   border-radius: 100%;
-  bottom: 233px;
-  right: -1px;
+  bottom: 110px;
+  right: -15px;
   border: none;
   cursor: pointer;
   transition: all ease-in-out 0.3s;
@@ -246,32 +219,6 @@
 }
 
 .bonnetAdd:focus {
-  transform: scale(1.2);
-  opacity: 100%;
-}
-
-.bonnetRemove {
-  position: absolute;
-  font-size: 20px;
-  color: white;
-  background-color: black;
-  width: 24px;
-  padding: 0px 0px;
-  border-radius: 100%;
-  bottom: 204px;
-  right: -3px;
-  border: none;
-  cursor: pointer;
-  transition: all ease-in-out 0.3s;
-  opacity: 50%;
-}
-
-.bonnetRemove:hover {
-  transform: scale(1.2);
-  opacity: 100%;
-}
-
-.bonnetRemove:focus {
   transform: scale(1.2);
   opacity: 100%;
 }
@@ -289,8 +236,8 @@
   width: 45px;
   padding: 10px 0px;
   border-radius: 100%;
-  bottom: 0px;
-  right: 0px;
+  bottom: -15px;
+  right: 140px;
 }
 
 .bagAdd {
@@ -301,8 +248,8 @@
   width: 45px;
   padding: 10px 0px;
   border-radius: 100%;
-  bottom: 20px;
-  right: 140px;
+  bottom: 16px;
+  right: 0px;
   border: none;
   cursor: pointer;
   transition: all ease-in-out 0.3s;
@@ -315,32 +262,6 @@
 }
 
 .bonnetRemove:focus {
-  transform: scale(1.2);
-  opacity: 100%;
-}
-
-.bagRemove {
-  position: absolute;
-  font-size: 20px;
-  color: white;
-  background-color: black;
-  width: 24px;
-  padding: 0px 0px;
-  border-radius: 100%;
-  bottom: -5px;
-  right: 130px;
-  border: none;
-  cursor: pointer;
-  transition: all ease-in-out 0.3s;
-  opacity: 50%;
-}
-
-.bagRemove:hover {
-  transform: scale(1.2);
-  opacity: 100%;
-}
-
-.bagRemove:focus {
   transform: scale(1.2);
   opacity: 100%;
 }
