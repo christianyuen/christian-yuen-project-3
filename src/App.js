@@ -24,17 +24,16 @@ function App() {
       // data is an object, so we iterate through it using a for in loop to access each book name 
 
       for (let key in data) {
-        // inside the loop, we push each book name to an array we already created inside the onValue() function called newState
+        // inside the loop, we push each item name to an array we already created inside the onValue() function called newState
         newState.push(data[key]);
       }
 
-      // then, we call setBooks in order to update our component's state using the local array newState
+      // then, we call setItems in order to update our component's state using the local array newState
       setItems(newState);  
     });
-  }, [])
+  }, [setItems])
     
     const handleAddToCart = () => {
-      // some event handler code we would like to run when the button is clicked.
       setCart( cart = cart + 1 );
       console.log(cart);
     }
@@ -42,23 +41,41 @@ function App() {
     let [cart, setCart] = useState(0);
 
     const handleRemoveFromCart = () => {
-      // some event handler code we would like to run when the button is clicked.
       setCart( cart = 0 );
       console.log(cart);
     }
 
+    // LIGHT/DARK FUNCTION
+    const [theme, setTheme] = useState('light' , '');
+
+    const toggleTheme = () => {
+      if (theme === 'light') {
+        setTheme('dark');
+        } else {
+          setTheme('light');
+        }
+      };
+      
+      useEffect(() => {
+        document.body.className = theme;
+      }, [theme]);
 
   return (
-    <div className="App">
+    <div className={`App ${theme}`}>
+      <section className="topPage">
+        <p>"<span>handmade</span> in <span>nyc</span>"</p>
+      </section>
       <div className="wrapper">
         <header>
           <div className="cart">
-            <img src={require('./assets/shopping-cart copy.png')}></img>
-            <p>{`${cart}`}</p>
+          <button className="removeButton" onClick={handleRemoveFromCart}>-</button>
+            <a onClick={toggleTheme}><img src={require('./assets/butterfly-top-view.png')} /> </a>
+            <div>
+              <img src={require('./assets/shopping-cart copy.png')}></img>
+              <p>{`${cart}`}</p>
+            </div>
           </div>
-          <div className="titleContainer">
             <img className="satory" src={require('./assets/satory.png')}></img>
-          </div>
         </header>
         <main>
           <ul>
@@ -70,7 +87,6 @@ function App() {
                     <div className="itemHover">
                       <p className="bucketPrice">{item.bucket.price}</p>
                           <button className="bucketAdd" onClick={handleAddToCart}>+</button>
-                          <button className="bucketRemove" onClick={handleRemoveFromCart}>-</button>
                     </div>
                   </div>
 
@@ -79,7 +95,7 @@ function App() {
                     <div className="itemHover">
                       <p className="beaniePrice">{item.beanie.price}</p>
                           <button className="beanieAdd" onClick={handleAddToCart}>+</button>
-                          <button className="beanieRemove" onClick={handleRemoveFromCart}>-</button>
+                          
                     </div>
                   </div>
 
@@ -88,16 +104,16 @@ function App() {
                     <div className="itemHover">
                       <p className="bonnetPrice">{item.bonnet.price}</p>
                           <button className="bonnetAdd" onClick={handleAddToCart}>+</button>
-                          <button className="bonnetRemove" onClick={handleRemoveFromCart}>-</button>
+                          
                     </div>
                   </div>
 
-                  <div className="itemContainer">
+                  <div id="bagContainer" className="itemContainer">
                     <img className="bag" src={item.bag.url} alt={item.bag.name} />
                     <div className="itemHover">
                       <p className="bagPrice">{item.bag.price}</p>
                           <button className="bagAdd" onClick={handleAddToCart}>+</button>
-                          <button className="bagRemove" onClick={handleRemoveFromCart}>-</button>
+                          
                     </div>
                   </div>  
                 </li>
@@ -105,8 +121,11 @@ function App() {
             })}
           </ul>
         </main>
-        
       </div>
+      {/* END WRAPPER */}
+      <footer>
+        <p>Created at <a href="https://www.junocollege.com">Juno College of Technology</a></p>
+      </footer>
     </div>
   )
 }

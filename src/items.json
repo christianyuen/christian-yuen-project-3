@@ -3,25 +3,25 @@
         "bonnet": {
             "name": "bonnet",
             "price": "$90",
-            "url": "https://i.ibb.co/72rskDv/bonnets.jpg",
+            "url": "https://iili.io/HEF1LN9.png",
             "product_id": "1"     
         },
         "bucket": {
             "name": "bucket",
-            "price": "$90",
-            "url": "https://i.ibb.co/m8tHxp8/buckets.jpg",
+            "price": "$65",
+            "url": "https://iili.io/HEF1Qte.png",
             "product_id": "2"     
         },
         "bag": {
             "name": "bag",
-            "price": "$150",
-            "url": "https://i.ibb.co/wzMfCTr/bags.jpg",
+            "price": "$95",
+            "url": "https://iili.io/HEF1tou.png",
             "product_id": "3"     
         },
         "beanie": {
             "name": "beanie",
-            "price": "$90",
-            "url": "https://i.ibb.co/hgj4b4S/beanies.jpg",
+            "price": "$75",
+            "url": "https://iili.io/HEF1DMb.png",
             "product_id": "4"     
         }
     }

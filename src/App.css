@@ -1,6 +1,9 @@
+
+
 /* BASE STYLES */
 .App {
   text-align: center;
+  font-size: 125%;
 }
 
 .wrapper {
@@ -9,18 +12,70 @@
   max-width: 1100px;
 }
 
-/* HEADER STYLES */
-
-.title {
-  padding: 0;
-  margin-top: 20px;
-  width: 150px;
+.dark {
+  background-color: #492a88;
 }
+
+.light {
+  background-color: #fff;
+  }
+
+/* TOP PAGE STYLES */
+.topPage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color: white;
+  height: 20px;
+}
+
+.topPage p span {
+  font-weight: bold;
+}
+/* HEADER STYLES */
 
 .cart {
   display: flex;
   justify-content: right;
   position: relative;
+}
+
+.removeButton {
+  position: absolute;
+  font-size: 20px;
+  color: white;
+  background-color: black;
+  width: 28px;
+  padding: 0px 0px;
+  border-radius: 100%;
+  bottom: 3px;
+  right: -18px;
+  border: none;
+  cursor: pointer;
+  transition: all ease-in-out 0.3s;
+  /* opacity: 50%; */
+  border: 2px white solid;
+}
+
+.removeButton:hover {
+  transform: scale(1.15);
+  opacity: 100%;
+}
+
+.removeButton:focus {
+  transform: scale(1.15);
+  opacity: 100%;
+}
+.cart a {
+  cursor: pointer;
+  height: auto;
+  transition: all ease-in-out 0.3s;
+  text-shadow: 2px 2px 5px red;
+}
+
+.cart a:hover {
+  transform: scale(1.15);
 }
 
 .cart img {
@@ -32,8 +87,8 @@
 .cart p {
   position: absolute;
   color: white;
-  right: 15px;
-  top: 8px;
+  right: 16px;
+  top: 12px;
 }
 
 /* MAIN STYLES */
@@ -52,8 +107,8 @@
   width: 45px;
   padding: 10px 0px;
   border-radius: 100%;
-  left: 30px;
-  bottom: 75px;
+  left: 25px;
+  bottom: 115px;
 }
 
 .bucketAdd {
@@ -64,44 +119,23 @@
   width: 45px;
   padding: 10px 0px;
   border-radius: 100%;
-  bottom: 95px;
-  right: 40px;
+  bottom: 135px;
+  right: 35px;
   border: none;
   cursor: pointer;
   transition: all ease-in-out 0.3s;
+  opacity: 50%;
 }
 
 .bucketAdd:hover {
-  transform: scale(1.1);
+  transform: scale(1.2);
+  opacity: 100%;
 }
 
 .bucketAdd:focus {
-  transform: scale(1.1);
+  transform: scale(1.2);
+  opacity: 100%;
 }
-
-.bucketRemove {
-  position: absolute;
-  font-size: 20px;
-  color: white;
-  background-color: black;
-  width: 24px;
-  padding: 0px 0px;
-  border-radius: 100%;
-  bottom: 95px;
-  right: 85px;
-  border: none;
-  cursor: pointer;
-  transition: all ease-in-out 0.3s;
-}
-
-.bucketRemove:hover {
-  transform: scale(1.1);
-}
-
-.bucketRemove:focus {
-  transform: scale(1.1);
-}
-
 
 .beanie {
   width: 200px;
@@ -128,42 +162,22 @@
   width: 45px;
   padding: 10px 0px;
   border-radius: 100%;
-  bottom: 95px;
-  right: 160px;
+  bottom: 69px;
+  right: 33px;
   border: none;
   cursor: pointer;
   transition: all ease-in-out 0.3s;
+  opacity: 50%;
 }
 
 .beanieAdd:hover {
-  transform: scale(1.1);
+  transform: scale(1.2);
+  opacity: 100%;
 }
 
 .beanieAdd:focus {
-  transform: scale(1.1);
-}
-
-.beanieRemove {
-  position: absolute;
-  font-size: 20px;
-  color: white;
-  background-color: black;
-  width: 24px;
-  padding: 0px 0px;
-  border-radius: 100%;
-  bottom: 95px;
-  right: 130px;
-  border: none;
-  cursor: pointer;
-  transition: all ease-in-out 0.3s;
-}
-
-.beanieRemove:hover {
-  transform: scale(1.1);
-}
-
-.beanieRemove:focus {
-  transform: scale(1.1);
+  transform: scale(1.2);
+  opacity: 100%;
 }
 
 .bonnet {
@@ -179,8 +193,8 @@
   width: 45px;
   padding: 10px 0px;
   border-radius: 100%;
-  top: 135px;
-  right: 65px;
+  top: 0px;
+  right: 120px;
 }
 
 .bonnetAdd {
@@ -191,42 +205,22 @@
   width: 45px;
   padding: 10px 0px;
   border-radius: 100%;
-  bottom: 220px;
-  right: 25px;
+  bottom: 110px;
+  right: -15px;
   border: none;
   cursor: pointer;
   transition: all ease-in-out 0.3s;
+  opacity: 50%;
 }
 
 .bonnetAdd:hover {
-  transform: scale(1.1);
+  transform: scale(1.2);
+  opacity: 100%;
 }
 
 .bonnetAdd:focus {
-  transform: scale(1.1);
-}
-
-.bonnetRemove {
-  position: absolute;
-  font-size: 20px;
-  color: white;
-  background-color: black;
-  width: 24px;
-  padding: 0px 0px;
-  border-radius: 100%;
-  bottom: 195px;
-  right: 20px;
-  border: none;
-  cursor: pointer;
-  transition: all ease-in-out 0.3s;
-}
-
-.bonnetRemove:hover {
-  transform: scale(1.1);
-}
-
-.bonnetRemove:focus {
-  transform: scale(1.1);
+  transform: scale(1.2);
+  opacity: 100%;
 }
 
 .bag {
@@ -242,8 +236,8 @@
   width: 45px;
   padding: 10px 0px;
   border-radius: 100%;
-  bottom: -10px;
-  right: 0px;
+  bottom: -15px;
+  right: 140px;
 }
 
 .bagAdd {
@@ -254,42 +248,22 @@
   width: 45px;
   padding: 10px 0px;
   border-radius: 100%;
-  bottom: 0px;
-  right: 150px;
+  bottom: 16px;
+  right: 0px;
   border: none;
   cursor: pointer;
   transition: all ease-in-out 0.3s;
+  opacity: 50%;
 }
 
 .bagAdd:hover {
-  transform: scale(1.1);
+  transform: scale(1.2);
+  opacity: 100%;
 }
 
 .bonnetRemove:focus {
-  transform: scale(1.1);
-}
-
-.bagRemove {
-  position: absolute;
-  font-size: 20px;
-  color: white;
-  background-color: black;
-  width: 24px;
-  padding: 0px 0px;
-  border-radius: 100%;
-  bottom: 0px;
-  right: 125px;
-  border: none;
-  cursor: pointer;
-  transition: all ease-in-out 0.3s;
-}
-
-.bagRemove:hover {
-  transform: scale(1.1);
-}
-
-.bagRemove:focus {
-  transform: scale(1.1);
+  transform: scale(1.2);
+  opacity: 100%;
 }
 
 li {
@@ -309,6 +283,7 @@ button {
 
 .itemContainer {
   position: relative;
+  margin: 10px;
 }
 
 .itemHover {
@@ -328,5 +303,91 @@ button {
   opacity: 100%;
 }
 
-/* FOOTER STYLES */
+#bagContainer {
+  margin-bottom: 50px;
+}
 
+/* FOOTER STYLES */
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+p a {
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+}
+
+p {
+  color: white;
+  font-size: 0.8rem;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 1020px) {
+  .itemContainer {
+    margin:  10px 50px;
+  }
+  .bucketPrice {
+    bottom: 43px;
+  }
+
+  .bucketAdd {
+    bottom: 65px;
+  }
+
+  .bucketRemove {
+    bottom: 65px;
+    right: 84px;
+  }
+
+  .beanieAdd {
+    bottom: -14px;
+  }
+
+  .beanieRemove {
+    bottom: 10px;
+  }
+  
+}
+
+@media (max-width: 790px) {
+  .itemContainer {
+    margin:  10px 80px;
+  }
+  .bucketPrice {
+    bottom: -20px;
+  }
+
+  .bucketAdd {
+    bottom: 0px;
+  }
+
+  .bucketRemove {
+    bottom: -5px;
+    right: 84px;
+  }
+
+
+  .bonnetAdd {
+    bottom: 169px;
+  }
+
+  .bonnetRemove {
+    bottom: 140px;
+  }
+  
+}
+
+@media (max-width: 440px) {
+  .satory {
+    width: 200px;
+  }
+}
