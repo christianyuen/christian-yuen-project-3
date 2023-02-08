@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react';
 import { getDatabase, ref, onValue } from 'firebase/database';
 import firebase from './Components/firebase'
 import TopBanner from './Components/TopBanner';
+import Footer from './Components/Footer';
 
 function App() {
   const [items, setItems] = useState([]);
@@ -65,7 +66,7 @@ function App() {
         <header>
           <div className="cart">
           <button className="removeButton" onClick={handleRemoveFromCart}>-</button>
-            <img onClick={toggleTheme} src={require('./assets/butterfly-top-view.png')} alt=""/> 
+            <img className ="butterfly" onClick={toggleTheme} src={require('./assets/butterfly-top-view.png')} alt=""/> 
             <div>
               <img src={require('./assets/shopping-cart copy.png')}alt="" /> 
               <p>{`${cart}`}</p>
@@ -90,8 +91,7 @@ function App() {
                     <img className="beanie" src={item.beanie.url} alt={item.beanie.name} />
                     <div className="itemHover">
                       <p className="beaniePrice">{item.beanie.price}</p>
-                          <button className="beanieAdd" onClick={handleAddToCart}>+</button>
-                          
+                      <button className="beanieAdd" onClick={handleAddToCart}>+</button>
                     </div>
                   </div>
 
@@ -99,8 +99,7 @@ function App() {
                     <img className="bonnet" src={item.bonnet.url} alt={item.bonnet.name} />
                     <div className="itemHover">
                       <p className="bonnetPrice">{item.bonnet.price}</p>
-                          <button className="bonnetAdd" onClick={handleAddToCart}>+</button>
-                          
+                      <button className="bonnetAdd" onClick={handleAddToCart}>+</button>
                     </div>
                   </div>
 
@@ -108,8 +107,7 @@ function App() {
                     <img className="bag" src={item.bag.url} alt={item.bag.name} />
                     <div className="itemHover">
                       <p className="bagPrice">{item.bag.price}</p>
-                          <button className="bagAdd" onClick={handleAddToCart}>+</button>
-                          
+                      <button className="bagAdd" onClick={handleAddToCart}>+</button>
                     </div>
                   </div>  
                 </li>
@@ -119,9 +117,7 @@ function App() {
         </main>
       </div>
       {/* END WRAPPER */}
-      <footer>
-        <p>Created at <a href="https://www.junocollege.com">Juno College of Technology</a></p>
-      </footer>
+      <Footer />
     </div>
   )
 }

@@ -33,8 +33,9 @@
 .topPage p span {
   font-weight: bold;
 }
-/* HEADER STYLES */
 
+
+/* HEADER STYLES */
 .cart {
   display: flex;
   justify-content: right;
@@ -67,18 +68,21 @@
   transform: scale(1.15);
   opacity: 100%;
 }
-.cart img {
+.butterfly {
   cursor: pointer;
   height: auto;
   transition: all ease-in-out 0.3s;
   text-shadow: 2px 2px 5px red;
+}
+
+.butterfly:hover {
+  transform: scale(1.15);
+}
+
+.cart img {
   margin-top: 15px;
   width: 50px;
   height: 45px;
-}
-
-.cart img:hover {
-  transform: scale(1.15);
 }
 
 .cart p {
@@ -89,8 +93,6 @@
 }
 
 /* MAIN STYLES */
-
-
 .bucket {
   width: 250px;
   height: auto;
@@ -327,7 +329,6 @@ p {
 }
 
 /* MEDIA QUERIES */
-
 @media (max-width: 1020px) {
   .itemContainer {
     margin:  10px 50px;
