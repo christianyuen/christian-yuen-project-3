@@ -67,21 +67,18 @@
   transform: scale(1.15);
   opacity: 100%;
 }
-.cart a {
+.cart img {
   cursor: pointer;
   height: auto;
   transition: all ease-in-out 0.3s;
   text-shadow: 2px 2px 5px red;
-}
-
-.cart a:hover {
-  transform: scale(1.15);
-}
-
-.cart img {
   margin-top: 15px;
   width: 50px;
   height: 45px;
+}
+
+.cart img:hover {
+  transform: scale(1.15);
 }
 
 .cart p {
