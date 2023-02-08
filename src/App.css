@@ -33,8 +33,9 @@
 .topPage p span {
   font-weight: bold;
 }
-/* HEADER STYLES */
 
+
+/* HEADER STYLES */
 .cart {
   display: flex;
   justify-content: right;
@@ -92,8 +93,6 @@
 }
 
 /* MAIN STYLES */
-
-
 .bucket {
   width: 250px;
   height: auto;
@@ -330,7 +329,6 @@ p {
 }
 
 /* MEDIA QUERIES */
-
 @media (max-width: 1020px) {
   .itemContainer {
     margin:  10px 50px;

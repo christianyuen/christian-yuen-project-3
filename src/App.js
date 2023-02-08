@@ -91,8 +91,7 @@ function App() {
                     <img className="beanie" src={item.beanie.url} alt={item.beanie.name} />
                     <div className="itemHover">
                       <p className="beaniePrice">{item.beanie.price}</p>
-                          <button className="beanieAdd" onClick={handleAddToCart}>+</button>
-                          
+                      <button className="beanieAdd" onClick={handleAddToCart}>+</button>
                     </div>
                   </div>
 
@@ -100,8 +99,7 @@ function App() {
                     <img className="bonnet" src={item.bonnet.url} alt={item.bonnet.name} />
                     <div className="itemHover">
                       <p className="bonnetPrice">{item.bonnet.price}</p>
-                          <button className="bonnetAdd" onClick={handleAddToCart}>+</button>
-                          
+                      <button className="bonnetAdd" onClick={handleAddToCart}>+</button>
                     </div>
                   </div>
 
@@ -109,8 +107,7 @@ function App() {
                     <img className="bag" src={item.bag.url} alt={item.bag.name} />
                     <div className="itemHover">
                       <p className="bagPrice">{item.bag.price}</p>
-                          <button className="bagAdd" onClick={handleAddToCart}>+</button>
-                          
+                      <button className="bagAdd" onClick={handleAddToCart}>+</button>
                     </div>
                   </div>  
                 </li>
