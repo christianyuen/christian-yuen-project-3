@@ -31,7 +31,7 @@ function App() {
       // then, we call setItems in order to update our component's state using the local array newState
       setItems(newState);  
     });
-  }, [])
+  }, [setItems])
     
     const handleAddToCart = () => {
       setCart( cart = cart + 1 );
